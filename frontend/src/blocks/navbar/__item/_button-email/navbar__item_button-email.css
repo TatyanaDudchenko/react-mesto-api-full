@@ -1,0 +1,9 @@
+.navbar__item_button-email {
+  margin-right: 24px;
+}
+
+@media screen and (max-width: 919px) {
+  .navbar__item_button-email {
+      margin-right: 0;
+  }
+}

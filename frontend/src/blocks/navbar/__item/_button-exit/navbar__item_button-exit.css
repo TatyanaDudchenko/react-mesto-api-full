@@ -1,0 +1,10 @@
+.navbar__item_button-exit {
+  cursor: pointer;
+  padding-right: 0;
+}
+
+@media screen and (max-width: 919px) {
+    .navbar__item_button-exit {
+      padding-right: 27px;
+    }
+}
