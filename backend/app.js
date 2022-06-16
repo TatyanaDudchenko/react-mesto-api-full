@@ -15,7 +15,7 @@ const { requestLogger, errorLogger } = require('./middlewares/logger');
 
 app.use(
   cors({
-    origin: 'http://localhost:3000',
+    origin: 'https://tanya-dudchenko.nomoredomains.xyz',
     credentials: true,
   }),
 );
