@@ -135,7 +135,7 @@
 }
 
 const api = new Api({
-  baseUrl: 'http://localhost:4000',
+  baseUrl: 'https://api.tanya-dudchenko.nomoredomains.xyz',
   // token: localStorage.getItem("jwt"),
 });
 
