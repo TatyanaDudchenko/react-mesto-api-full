@@ -20,7 +20,6 @@ console.log(process.env.NODE_ENV); // production
 app.use(
   cors({
     origin: ['https://tanya-dudchenko.nomoredomains.xyz', 'http://tanya-dudchenko.nomoredomains.xyz'],
-    credentials: true,
   }),
 );
 
