@@ -5,6 +5,7 @@ const express = require('express');
 const { PORT = 4000 } = process.env;
 const mongoose = require('mongoose');
 const { errors } = require('celebrate');
+const bodyParser = require('body-parser');
 const cors = require('cors');
 const { routes } = require('./routes/app');
 
@@ -17,6 +18,7 @@ const { requestLogger, errorLogger } = require('./middlewares/logger');
 
 console.log(process.env.NODE_ENV); // production
 
+app.use(bodyParser.json());
 app.use(
   cors({
     origin: ['https://tanya-dudchenko.nomoredomains.xyz', 'http://tanya-dudchenko.nomoredomains.xyz'],
