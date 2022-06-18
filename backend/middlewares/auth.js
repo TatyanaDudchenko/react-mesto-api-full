@@ -19,7 +19,7 @@ const isAuthtorized = async (req, res, next) => {
   let payload;
 
   try {
-    payload = await jwt.verify(token, JWT_SECRET);
+    payload = await jwt.verify(token, NODE_ENV === 'production' ? JWT_SECRET : 'dev-secret');
   } catch (err) {
     next(new AuthorizationError('Необходима авторизация')); // 401
     return;
