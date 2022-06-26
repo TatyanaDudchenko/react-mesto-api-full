@@ -25,11 +25,11 @@ app.use(
 
 app.use(requestLogger); // подключаем логгер запросов
 
-app.get('/crash-test', () => { // после прохождения ревью код краш-теста необходимо удалить
-  setTimeout(() => {
-    throw new Error('Сервер сейчас упадёт');
-  }, 0);
-});
+// app.get('/crash-test', () => { // после прохождения ревью код краш-теста необходимо удалить
+//   setTimeout(() => {
+//     throw new Error('Сервер сейчас упадёт');
+//   }, 0);
+// });
 
 app.post('/signin', express.json(), validationsLogin, login);
 app.post('/signup', express.json(), validationsCreateUser, createUser);
